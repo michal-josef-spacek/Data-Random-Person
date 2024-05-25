@@ -52,18 +52,18 @@ sub new {
 sub random {
 	my $self = shift;
 
-	my $data_ar = [];
 	foreach my $i (1 .. $self->{'num_users'}) {
+	my @data;
 		my $ok = 1;
 		while ($ok) {
 			my $people = $self->{'cb_name'}->($self);
 			my $email = $self->_name_to_email($people);
-			if (none { $_->email eq $email } @{$data_ar}) {
+			if (none { $_->email eq $email } @data) {
 				my $id;
 				if ($self->{'mode_id'}) {
 					$id = $self->{'cb_id'}->($self);
 				}
-				push @{$data_ar}, Data::Person->new(
+				push @data, Data::Person->new(
 					'email' => $email,
 					defined $id ? ('id' => $id) : (),
 					'name' => $people,
@@ -75,7 +75,7 @@ sub random {
 		}
 	}
 
-	return $data_ar;
+	return @data;
 }
 
 sub _name_to_email {
