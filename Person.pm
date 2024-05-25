@@ -36,7 +36,7 @@ sub new {
 	$self->{'mode_id'} = 0;
 
 	# Number of users.
-	$self->{'num_users'} = 10;
+	$self->{'num_people'} = 10;
 
 	# Process parameters.
 	set_params($self, @params);
@@ -52,8 +52,8 @@ sub new {
 sub random {
 	my $self = shift;
 
-	foreach my $i (1 .. $self->{'num_users'}) {
 	my @data;
+	foreach my $i (1 .. $self->{'num_people'}) {
 		my $ok = 1;
 		while ($ok) {
 			my $people = $self->{'cb_name'}->($self);
