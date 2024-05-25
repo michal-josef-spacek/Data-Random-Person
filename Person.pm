@@ -10,7 +10,7 @@ use List::Util 1.33 qw(none);
 use Mock::Person::CZ qw(name);
 use Text::Unidecode;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub new {
 	my ($class, @params) = @_;
