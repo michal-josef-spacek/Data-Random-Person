@@ -21,5 +21,6 @@ SIGNATURE
 t/Data-Random-Person/01-use.t
 t/Data-Random-Person/02-version.t
 t/Data-Random-Person/03-new.t
+t/Data-Random-Person/04-random.t
 xt/Data-Random-Person/01-pod_coverage.t
 xt/Data-Random-Person/02-pod.t
