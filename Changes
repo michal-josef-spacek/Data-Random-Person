@@ -1,5 +1,6 @@
 0.02
  - Add check for 'mode_id' parameter.
+ - Add documentation.
  - Add tests for constructor.
  - Add tests for random() method.
 

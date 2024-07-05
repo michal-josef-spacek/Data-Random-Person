@@ -20,6 +20,7 @@ meta-spec:
 name: Data-Random-Person
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt
