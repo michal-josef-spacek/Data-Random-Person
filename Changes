@@ -1,4 +1,4 @@
-0.02
+0.02 2024-07-05T02:09:05+02:00
  - Add check for 'mode_id' parameter.
  - Add documentation.
  - Add tests for constructor.
