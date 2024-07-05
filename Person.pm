@@ -7,6 +7,7 @@ use Class::Utils qw(set_params);
 use Data::Person;
 use Error::Pure qw(err);
 use List::Util 1.33 qw(none);
+use Mo::utils 0.06 qw(check_bool);
 use Mock::Person::CZ qw(name);
 use Text::Unidecode;
 
@@ -40,6 +41,8 @@ sub new {
 
 	# Process parameters.
 	set_params($self, @params);
+
+	check_bool($self, 'mode_id');
 
 	# Check domain.
 	if ($self->{'domain'} !~ m/^[a-zA-Z0-9\-\.]+$/ms) {

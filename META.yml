@@ -28,6 +28,7 @@ requires:
   Data::Person: 0.02
   Error::Pure: 0
   List::Util: 1.33
+  Mo::utils: 0.06
   Mock::Person::CZ: 0
   Scalar::Util: 0
   Text::Unidecode: 0

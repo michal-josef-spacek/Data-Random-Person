@@ -22,6 +22,7 @@ requires 'Class::Utils' => 0;
 requires 'Data::Person' => 0.02;
 requires 'Error::Pure' => 0;
 requires 'List::Util' => 1.33;
+requires 'Mo::utils' => 0.06;
 requires 'Mock::Person::CZ' => 0;
 requires 'Scalar::Util' => 0;
 requires 'Text::Unidecode' => 0;
