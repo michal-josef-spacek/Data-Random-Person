@@ -11,7 +11,7 @@ use Mo::utils 0.06 qw(check_bool);
 use Mock::Person::CZ qw(name);
 use Text::Unidecode;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub new {
 	my ($class, @params) = @_;
@@ -262,6 +262,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
